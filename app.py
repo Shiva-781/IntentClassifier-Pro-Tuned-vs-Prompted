@@ -1,23 +1,5 @@
 
 import streamlit as st
-import transformers
-
-st.write("Transformers version:", transformers.__version__)
-
-try:
-    from transformers import AutoTokenizer
-    st.success("AutoTokenizer imported successfully")
-except Exception as e:
-    st.error(f"AutoTokenizer Error: {e}")
-
-try:
-    from transformers import AutoModelForSequenceClassification
-    st.success("AutoModel imported successfully")
-except Exception as e:
-    st.error(f"AutoModel Error: {e}")
-
-st.stop()
-import streamlit as st
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
