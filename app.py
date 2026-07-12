@@ -1,3 +1,11 @@
+
+import streamlit as st
+import transformers
+
+st.write("Transformers version:", transformers.__version__)
+st.write("Transformers path:", transformers.__file__)
+st.stop()
+
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
